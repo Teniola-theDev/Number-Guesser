@@ -5,6 +5,7 @@ We will be coding the javascript ourselves.
 
 1. I prefer using ordered lists to unordered lists
 2. git commit -a -m "<message>"
+3.
 
 ## Issues
 
@@ -52,3 +53,21 @@ function gameOver(won, msg) {
 
 }
 ```
+
+5. Ran into this error
+
+```
+ Uncaught TypeError: Cannot read properties of null (reading 'addEventListener'
+```
+
+**SOLUTION**
+
+> I did not target the DOM element correctly.
+
+### What i wish to add
+
+1. Be able to hide the stuff and only show the input button.
+
+## What I should read more about
+
+Hoisting.
