@@ -33,3 +33,11 @@ We will be coding the javascript ourselves.
    ```
 
 ````
+
+- forgot how to declare ternary operator
+
+```
+function gameOver(won, msg) {
+won === true ? (color = 'green') : (color = 'red');
+}
+```
