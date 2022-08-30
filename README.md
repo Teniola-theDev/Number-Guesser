@@ -3,26 +3,29 @@ We will be coding the javascript ourselves.
 
 ## Issues
 
-- I could not see the values of my span after setting what should be there in javascript
+1. I could not see the values of my span after setting what should be there in javascript
 
-  ```
-    let min = 1,
-     max = 10,
-    const maxNum = document.querySelector('.max-num');
-    maxNum.textContent = max;
-    //NOT
-    maxNum.value = max;
+```
+  let min = 1,
+   max = 10,
+  const maxNum = document.querySelector('.max-num');
+  maxNum.textContent = max;
+  //NOT
+  maxNum.value = max;
 
-  ```
+```
 
-* Cannot set property 'color' of Undefined in JS
-  - I was doing
-  ```
-     message.textContent.style.color = color;
-     //INSTEAD OF
-     message.style.color = color;
-  ```
-  - To define a color as a parameter, add it in quotes
+2. Cannot set property 'color' of Undefined in JS
+
+```
+// I was doing
+
+   message.textContent.style.color = color;
+   //INSTEAD OF
+   message.style.color = color;
+```
+
+- To define a color as a parameter, add it in quotes
 
 ````
    function setMessage(error, color) {
@@ -38,6 +41,12 @@ We will be coding the javascript ourselves.
 
 ```
 function gameOver(won, msg) {
-won === true ? (color = 'green') : (color = 'red');
+  let color;
+  won === true ? (color = 'green') : (color = 'red');
+  guessInput.disabled = won;
+  guessInput.style.borderColor = color;
+  message.style.color = color;
+  setMessage(msg, color);
+  //
 }
 ```
