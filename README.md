@@ -1,6 +1,8 @@
 A short game from the Brad Traversy Javascript course.
 We will be coding the javascript ourselves.
 
+https://teniola-thedev.github.io/Number-Guesser/ 
+
 ## Discoveries
 
 1. I prefer using ordered lists to unordered lists
