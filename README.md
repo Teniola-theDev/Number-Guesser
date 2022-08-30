@@ -15,16 +15,14 @@ We will be coding the javascript ourselves.
 
   ```
 
-  -
-
-  * Cannot set property 'color' of Undefined in JS
-    - I was doing
-    ```
-       message.textContent.style.color = color;
-       //INSTEAD OF
-       message.style.color = color;
-    ```
-  * To define a color as a parameter, add it in quotes
+* Cannot set property 'color' of Undefined in JS
+  - I was doing
+  ```
+     message.textContent.style.color = color;
+     //INSTEAD OF
+     message.style.color = color;
+  ```
+  - To define a color as a parameter, add it in quotes
 
 ````
    function setMessage(error, color) {
