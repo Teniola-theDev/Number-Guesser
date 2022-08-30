@@ -1,6 +1,11 @@
 A short game from the Brad Traversy Javascript course.
 We will be coding the javascript ourselves.
 
+## Discoveries
+
+1. I prefer using ordered lists to unordered lists
+2. git commit -a -m "<message>"
+
 ## Issues
 
 1. I could not see the values of my span after setting what should be there in javascript
@@ -18,26 +23,23 @@ We will be coding the javascript ourselves.
 2. Cannot set property 'color' of Undefined in JS
 
 ```
-// I was doing
-
-   message.textContent.style.color = color;
-   //INSTEAD OF
-   message.style.color = color;
+  I WAS DOING
+    message.textContent.style.color = color;
+  INSTEAD OF
+    message.style.color = color;
 ```
 
-- To define a color as a parameter, add it in quotes
+3. To define a color as a parameter, add it in quotes
 
-````
+```
    function setMessage(error, color) {
      message.style.color = color;
      message.textContent = error;
    }
    setMessage('Kindly input a number between 1 and 10', 'red');
-   ```
+```
 
-````
-
-- forgot how to declare ternary operator
+4. forgot how to declare ternary operator
 
 ```
 function gameOver(won, msg) {
@@ -47,6 +49,6 @@ function gameOver(won, msg) {
   guessInput.style.borderColor = color;
   message.style.color = color;
   setMessage(msg, color);
-  //
+
 }
 ```
