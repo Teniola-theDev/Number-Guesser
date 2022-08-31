@@ -70,8 +70,7 @@ function gameOver(won, msg) {
   guessBtn.value = 'Play Again';
   guessBtn.className += 'play-again';
 
-  // Trying to hide the input bar and only show the button
-
-  /* guessInput.display = 'none';
-  guessBtn.display = 'block'; */
+  // Hides input bar
+  guessInput.style.display = 'none';
+  guessBtn.display = 'block'; 
 }
