@@ -72,5 +72,5 @@ function gameOver(won, msg) {
 
   // Hides input bar
   guessInput.style.display = 'none';
-  guessBtn.display = 'block'; 
+  guessBtn.style.display = 'block'; 
 }
